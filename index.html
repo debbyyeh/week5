@@ -5,25 +5,265 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>首頁</title>
+  <!-- material icon -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Mono&display=swap"
+    rel="stylesheet">
+  <!-- CKEditor 5 -->
+  <script src="https://cdn.ckeditor.com/ckeditor5/29.1.0/classic/ckeditor.js"></script>
+  <title>
+    首頁
+  </title>
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
-  <header class="header">
-    這是 header
-  </header>
+  <div class="container d-flex">
+    <div class="sideBar d-flex flex-column justify-content-between">
+      <div class="sideBar_list">
+        <h1 class="p-5">
+          <a href="index.html">ANSWER</a>
+        </h1>
+        <ul>
+          <li class="mb-4"><a href="#" class="d-flex fw-bold ps-5"><span class="material-icons me-3">
+                assessment
+              </span>
+              Dashboard</a>
+          </li>
+          <li class="mb-4"><a href="#" class="d-flex fw-bold ps-5"><span class="material-icons me-3">
+                question_answer
+              </span>Question</a></li>
+          <li class="mb-4"><a href="index.html" class="d-flex fw-bold ps-5"><span class="material-icons me-3">
+                assignment
+              </span>Assignment</a></li>
+          <li class="mb-4"><a href="#" class="d-flex fw-bold ps-5"><span class="material-icons me-3">
+                video_library
+              </span>Course</a></li>
+          <li class="mb-4"><a href="admin.html" class="d-flex fw-bold ps-5"><span class="material-icons me-3">
+                group
+              </span>
+              Admin</a>
+          </li>
+          <li class="mb-4"><a href="#" class="d-flex fw-bold ps-5"><span class="material-icons me-3">
+                settings
+              </span>Settings</a></li>
+        </ul>
+      </div>
+      <div class="d-flex align-items-center ps-5">
+        <div class="img_wrap flex-shrink-0 me-3">
+          <img src="./assets/images/andychen.jpeg" alt="member" class="rounded-circle">
+        </div>
+        <div class="sideBar_log_member">
+          <p class="sideBar_log_name fw-bold mb-1">Andy Chen</p>
+          <p class="sideBar_log_email">andy0401@mail.com</p>
+        </div>
+      </div>
+    </div>
+    
+<div class="index">
+    <header class="d-flex justify-content-between align-items-center mb-2">
+        <div class="title d-flex align-items-center">
+            <h2 class="page_name fw-bold me-5">Assignment</h2>
+            <select class="fw-bold border-0">
+                <option selected>All Courses</option>
+                <option value="class">
+                    切版直播班
+                </option>
+                <option value="class">JS實戰班</option>
+                <option value="class">面試作品</option>
+            </select>
+        </div>
+        <div class="notes d-flex align-items-center">
+            <a href="#"><span class="material-icons">
+                    search
+                </span></a>
+            <a href="#"><span class="material-icons ms-4">
+                    notifications_active
+                </span></a>
+        </div>
+    </header>
+    <div class="assignment_main d-flex justify-content-between">
+        <div class="status">
+            <a href="#">
+                <p class="assignment_list d-flex align-items-center fw-bold">All (4)<span class="material-icons arrow">
+                        expand_more
+                    </span>
+                </p>
+            </a>
+            <ul class="list-group">
+                <li class="list-group-item active">
+                    <a href="#">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="assignment_type">Chapter Assignment 2</p>
+                            <p class="assignment_time">4 hrs ago</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="assignment_title">Please check this file…</p>
+                            <p class="assignment_name">Emily Wang</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="assignment_type">Chapter Assignment 1</p>
+                            <p class="assignment_time">12 hrs ago</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="assignment_title">My Homework</p>
+                            <p class="assignment_name">David Xu</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="assignment_type">Final Assignment</p>
+                            <p class="assignment_time">18 hrs ago</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="assignment_title">Have a problem with this…</p>
+                            <p class="assignment_name">Tony Wei</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="assignment_type">Final Assignment</p>
+                            <p class="assignment_time">19 hrs ago</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="assignment_title">Did I do it right?</p>
+                            <p class="assignment_name">Christina Lin</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="assignment_expand">
+            <div class="message">
+                <p class="message_news mb-2">2 comments</p>
+                <div class="card">
+                    <div class="card-header">
+                        <p class="assignment_type">Chapter Assignment 2 / HTML&CSS</p>
+                        <p class="assignment_title">Please check this file for me, thanks!</p>
+                        <div class="assignment_button">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex pb-3">
+                            <div class="flex-shrink-0 card_pic">
+                                <img src="./assets/images/emilywang.jpeg" alt="Emily" class="rounded-circle">
+                            </div>
+                            <div class="flex-grow-1 ms-3 upper_part pb-3">
+                                <p class="mb-1 fw-bold">Emily Wang</p>
+                                <p class="message_time mb-3">10:38 AM (4 hours ago)</p>
+                                <p class="assignment_content mb-3">Hi Teacher, the attached file is my homework of
+                                    chapter
+                                    2. And
+                                    here comes a question: Why in the following code the height of the div is bigger
+                                    than
+                                    the height of the <a href="#">img</a> ? There is a gap below the image, but it
+                                    doesn’t
+                                    seems to be a padding/margin. What is the gap or extra space below image?</p>
+                                <a href="#" class="document d-flex align-items-center fw-bold"
+                                    download="HW-2-David.zip"><span class="material-icons me-2">
+                                        attach_file
+                                    </span>HW-2-David.zip</a>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 card_pic">
+                                <img src="./assets/images/andychen.jpeg" alt="Andy" class="rounded-circle">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <div class="reply_area d-flex justify-content-between align-items-start">
+                                    <div class="teacher">
+                                        <p class="mb-1 fw-bold">Andy Chen (You)</p>
+                                        <p class="message_time mb-3">13:24 AM (1 hours ago)</p>
+                                    </div>
+                                    <div class="teacher_eidt d-flex">
+                                        <a href="#"><span class="material-icons star-click me-4">
+                                                star_border
+                                            </span></a>
+                                        <a href="#" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                            aria-expanded="false" aria-controls="collapseExample">
+                                            <span class="material-icons">
+                                                mode_edit
+                                            </span>
+                                        </a>
+                                        <div class="ckeditor" class="collapse" id="collapseExample">
+                                            <div class="textarea pb-3">
+                                                <div id="editor">
+                                                    <p>This is some sample content.</p>
+                                                </div>
+                                                <div class="d-flex justify-content-end me-3">
+                                                    <button class="btn btn-secondary me-2 px-4">Cancel</button>
+                                                    <button class="btn btn-primary px-4">Reply</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="assignment_content">Hi David, by default, an image is rendered inline, like a
+                                    letter so it sits on the same line that a, b, c and d sit on. There is space below
+                                    that
+                                    line for the descenders you find on letters like g, j, p and q.<br> You can: <br>　•
+                                    adjust
+                                    the
+                                    <a href="https://www.w3schools.com/css/css_align.asp">vertical-align</a>
+                                    of the image to position it elsewhere (e.g. the <a
+                                        href="https://www.w3schools.com/css/css_align.asp">middle</a> ) or <br>　• change
+                                    the
+                                    <a href="https://www.w3schools.com/css/css_display_visibility.asp">display</a> so it
+                                    isn’t inline.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment_pagniation d-flex justify-content-between align-items-center mt-3">
+                <div>
+                    <span class="material-icons me-4">
+                        chevron_left
+                    </span><span class="material-icons">
+                        chevron_right
+                    </span>
+                </div>
+                <div class="d-flex align-items-center ">
+                    <button type="button" class="btn btn-outline-primary">Mark as read</button>
+                    <button type="button" class="btn btn-outline-secondary ms-3">Reply</button>
+                </div>
+            </div>
+        </div>
 
-  
-<h1>
-  這是一段話1234
-</h1>
-
-<div class="box"></div>
-
-  <footer class="footer">
-    footer
-  </footer>
+    </div>
+</div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- CKEditor 5 -->
+  <script>
+    ClassicEditor
+      .create(document.querySelector('#editor'))
+      .catch(error => {
+        console.error(error);
+      });
+  </script>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>

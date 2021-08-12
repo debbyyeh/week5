@@ -1,23 +1,12 @@
-$color: #00cc99;
+@import "settings/reset";
+@import "settings/base";
+@import "settings/utility";
+@import "settings/variable";
+@import "settings/grid";
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
+@import "helper";
+@import "mixin";
 
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
-
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}
+@import "layout/asideBar";
+@import "pages/index";
+@import "pages/admin";

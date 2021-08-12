@@ -5,8 +5,184 @@ engine: ejs
 current: index
 ---
 
-<h1>
-  這是一段話1234
-</h1>
+<div class="index">
+    <header class="d-flex justify-content-between align-items-center mb-2">
+        <div class="title d-flex align-items-center">
+            <h2 class="page_name fw-bold me-5">Assignment</h2>
+            <select class="fw-bold border-0">
+                <option selected>All Courses</option>
+                <option value="class">
+                    切版直播班
+                </option>
+                <option value="class">JS實戰班</option>
+                <option value="class">面試作品</option>
+            </select>
+        </div>
+        <div class="notes d-flex align-items-center">
+            <a href="#"><span class="material-icons">
+                    search
+                </span></a>
+            <a href="#"><span class="material-icons ms-4">
+                    notifications_active
+                </span></a>
+        </div>
+    </header>
+    <div class="assignment_main d-flex justify-content-between">
+        <div class="status">
+            <a href="#">
+                <p class="assignment_list d-flex align-items-center fw-bold">All (4)<span class="material-icons arrow">
+                        expand_more
+                    </span>
+                </p>
+            </a>
+            <ul class="list-group">
+                <li class="list-group-item active">
+                    <a href="#">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="assignment_type">Chapter Assignment 2</p>
+                            <p class="assignment_time">4 hrs ago</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="assignment_title">Please check this file…</p>
+                            <p class="assignment_name">Emily Wang</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="assignment_type">Chapter Assignment 1</p>
+                            <p class="assignment_time">12 hrs ago</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="assignment_title">My Homework</p>
+                            <p class="assignment_name">David Xu</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="assignment_type">Final Assignment</p>
+                            <p class="assignment_time">18 hrs ago</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="assignment_title">Have a problem with this…</p>
+                            <p class="assignment_name">Tony Wei</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="assignment_type">Final Assignment</p>
+                            <p class="assignment_time">19 hrs ago</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="assignment_title">Did I do it right?</p>
+                            <p class="assignment_name">Christina Lin</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="assignment_expand">
+            <div class="message">
+                <p class="message_news mb-2">2 comments</p>
+                <div class="card">
+                    <div class="card-header">
+                        <p class="assignment_type">Chapter Assignment 2 / HTML&CSS</p>
+                        <p class="assignment_title">Please check this file for me, thanks!</p>
+                        <div class="assignment_button">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex pb-3">
+                            <div class="flex-shrink-0 card_pic">
+                                <img src="./assets/images/emilywang.jpeg" alt="Emily" class="rounded-circle">
+                            </div>
+                            <div class="flex-grow-1 ms-3 upper_part pb-3">
+                                <p class="mb-1 fw-bold">Emily Wang</p>
+                                <p class="message_time mb-3">10:38 AM (4 hours ago)</p>
+                                <p class="assignment_content mb-3">Hi Teacher, the attached file is my homework of
+                                    chapter
+                                    2. And
+                                    here comes a question: Why in the following code the height of the div is bigger
+                                    than
+                                    the height of the <a href="#">img</a> ? There is a gap below the image, but it
+                                    doesn’t
+                                    seems to be a padding/margin. What is the gap or extra space below image?</p>
+                                <a href="#" class="document d-flex align-items-center fw-bold"
+                                    download="HW-2-David.zip"><span class="material-icons me-2">
+                                        attach_file
+                                    </span>HW-2-David.zip</a>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 card_pic">
+                                <img src="./assets/images/andychen.jpeg" alt="Andy" class="rounded-circle">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <div class="reply_area d-flex justify-content-between align-items-start">
+                                    <div class="teacher">
+                                        <p class="mb-1 fw-bold">Andy Chen (You)</p>
+                                        <p class="message_time mb-3">13:24 AM (1 hours ago)</p>
+                                    </div>
+                                    <div class="teacher_eidt d-flex">
+                                        <a href="#"><span class="material-icons star-click me-4">
+                                                star_border
+                                            </span></a>
+                                        <a href="#" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                            aria-expanded="false" aria-controls="collapseExample">
+                                            <span class="material-icons">
+                                                mode_edit
+                                            </span>
+                                        </a>
+                                        <div class="ckeditor" class="collapse" id="collapseExample">
+                                            <div class="textarea pb-3">
+                                                <div id="editor">
+                                                    <p>This is some sample content.</p>
+                                                </div>
+                                                <div class="d-flex justify-content-end me-3">
+                                                    <button class="btn btn-secondary me-2 px-4">Cancel</button>
+                                                    <button class="btn btn-primary px-4">Reply</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="assignment_content">Hi David, by default, an image is rendered inline, like a
+                                    letter so it sits on the same line that a, b, c and d sit on. There is space below
+                                    that
+                                    line for the descenders you find on letters like g, j, p and q.<br> You can: <br>　•
+                                    adjust
+                                    the
+                                    <a href="https://www.w3schools.com/css/css_align.asp">vertical-align</a>
+                                    of the image to position it elsewhere (e.g. the <a
+                                        href="https://www.w3schools.com/css/css_align.asp">middle</a> ) or <br>　• change
+                                    the
+                                    <a href="https://www.w3schools.com/css/css_display_visibility.asp">display</a> so it
+                                    isn’t inline.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment_pagniation d-flex justify-content-between align-items-center mt-3">
+                <div>
+                    <span class="material-icons me-4">
+                        chevron_left
+                    </span><span class="material-icons">
+                        chevron_right
+                    </span>
+                </div>
+                <div class="d-flex align-items-center ">
+                    <button type="button" class="btn btn-outline-primary">Mark as read</button>
+                    <button type="button" class="btn btn-outline-secondary ms-3">Reply</button>
+                </div>
+            </div>
+        </div>
 
-<div class="box"></div>
+    </div>
+</div>

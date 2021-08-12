@@ -1,0 +1,42 @@
+.sideBar {
+    min-height: 100vh;
+    min-width: 296px;
+    background-color: $background-gray;
+    .sideBar_list {
+        h1 {
+            a {
+                @include word-hidden;
+                background-image: url(../images/logo-ANSWER.svg);
+                width: 151px;
+                height: 40px;
+                &:hover {
+                    border-left: none;
+                    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+        a {
+            border-left: 4px solid transparent;
+            &:hover {
+                color: $primary;
+                border-left: 4px solid $primary;
+            }
+        }
+    }
+    .img_wrap {
+        width: 40px;
+        height: 40px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+    }
+    .sideBar_log_member {
+        .sideBar_log_email {
+            color: $text-gray;
+            font-size: 14px;
+        }
+    }
+}

@@ -91,14 +91,17 @@ input {
   -webkit-box-shadow: none;
           box-shadow: none; }
 
-.icon-primary {
-  color: #198754; }
-
-.text-drak {
-  color: #212529; }
+.mr-10 {
+  margin-right: 10px; }
 
 .mb-18 {
   margin-bottom: 18px; }
+
+.bg-gray {
+  background-color: #f8f9fa; }
+
+.fs-7 {
+  font-size: 12px; }
 
 @media (max-width: 1400px) {
   .container {
@@ -128,8 +131,7 @@ input {
 
 .sideBar {
   min-height: 100vh;
-  min-width: 296px;
-  background-color: #f8f9fa; }
+  min-width: 296px; }
   .sideBar .sideBar_list h1 a {
     background-repeat: no-repeat;
     text-indent: 101%;
@@ -163,140 +165,106 @@ input {
     color: #6c757d;
     font-size: 14px; }
 
-.index {
-  padding: 32px;
-  width: 80%; }
-  .index header {
-    padding-top: 32px;
-    padding-bottom: 32px; }
-  .index .status {
-    width: 40%; }
-  .index .list-group-item:hover {
-    background-color: #f8f9fa; }
-  .index .list-group-item.active {
-    background-color: #f8f9fa;
-    border-color: #ced4da; }
-  .index .page_name {
-    font-size: 24px;
-    line-height: 33px; }
-    .index .page_name select:hover {
-      cursor: pointer; }
-  .index .assignment_list {
-    margin-bottom: 4px; }
-  .index .arrow {
-    color: #198754; }
-  .index .assignment_type {
-    font-size: 12px; }
-  .index .assignment_time {
-    font-size: 12px; }
-  .index .assignment_name {
-    font-size: 12px;
-    color: #6c757d; }
-  .index .assignment_expand {
-    width: 58%; }
-  .index .message_news {
-    font-size: 12px;
-    text-align: right;
-    color: #6c757d; }
-  .index .card_pic {
-    width: 40px;
-    height: 40px; }
-    .index .card_pic img {
-      width: 100%;
-      height: 100%;
-      -o-object-fit: cover;
-         object-fit: cover; }
-  .index .upper_part {
-    border-bottom: 1px solid #ced4da; }
-  .index .message_time {
-    font-size: 12px;
-    color: #6c757d; }
-  .index .assignment_content {
-    font-size: 14px;
-    line-height: 21px; }
-    .index .assignment_content a {
-      color: #198754;
-      background-color: #f8f9fa;
-      display: inline; }
-      .index .assignment_content a:hover {
-        text-decoration: underline; }
-  .index .document {
-    background-color: #f8f9fa;
-    display: inline;
-    padding: 10px 16px; }
-  .index .star-click:hover {
-    font-weight: 900; }
-  .index .ck-editor__editable_inline {
-    min-height: 250px; }
-  .index .ck-content.ck-editor__editable,
-  .index .ck.ck-toolbar {
-    border-color: transparent !important; }
-  .index .textarea {
-    border: 1px solid; }
+.index .list-group-item:hover {
+  background-color: #f8f9fa; }
 
-.admin {
-  padding: 32px;
-  width: 80%; }
-  .admin header {
-    padding-top: 32px;
-    padding-bottom: 32px; }
-  .admin .page_name {
-    font-size: 24px;
-    line-height: 33px; }
-  .admin .admin_list tr {
-    border-bottom: 1px solid #ced4da; }
-    .admin .admin_list tr:hover {
-      background-color: #f8f9fa;
-      cursor: pointer; }
-  .admin .arrow_downward {
-    display: inline-block; }
-  .admin .bottom_color tr {
-    border-bottom: 1px solid #212529; }
-  .admin .page-item a:hover {
+.index .list-group-item.active {
+  background-color: #f8f9fa;
+  border-color: #ced4da; }
+
+.index .page_name {
+  font-size: 24px;
+  line-height: 33px; }
+  .index .page_name select:hover {
+    cursor: pointer; }
+
+.index .dropdown-toggle::after {
+  display: none; }
+
+.index .assignment_name {
+  font-size: 12px;
+  color: #6c757d; }
+
+.index .assignment_expand {
+  width: 58%; }
+
+.index .message_news {
+  color: #6c757d; }
+
+.index .card_pic {
+  width: 40px;
+  height: 40px; }
+  .index .card_pic img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.index .message_time {
+  color: #6c757d; }
+
+.index .assignment_content {
+  font-size: 14px;
+  line-height: 21px; }
+  .index .assignment_content a {
+    display: inline; }
+    .index .assignment_content a:hover {
+      text-decoration: underline; }
+
+.index .star-click:hover {
+  font-weight: 900; }
+
+.index .ck-editor__editable_inline {
+  min-height: 250px; }
+
+.index .ck-content.ck-editor__editable,
+.index .ck.ck-toolbar {
+  border-color: transparent !important; }
+
+.index .textarea {
+  border: 1px solid; }
+
+.admin .page_name {
+  font-size: 24px;
+  line-height: 33px; }
+
+.admin .admin_list tr:hover {
+  background-color: #f8f9fa;
+  cursor: pointer; }
+
+.admin .arrow_downward {
+  display: inline-block; }
+
+.admin .page-link {
+  color: black; }
+  .admin .page-link:hover {
     color: white;
     background-color: #198754; }
-  .admin .modal-header {
-    border-bottom: none; }
-    .admin .modal-header h3 {
-      font-size: 24px;
-      line-height: 33px; }
-  .admin .modal-input-content h4 {
-    margin-bottom: 18px;
-    font-size: 20px;
-    line-height: 33px; }
-  .admin .modal-input-content label {
-    font-size: 14px; }
-  .admin .divider {
-    color: #ced4da; }
-  .admin .icon-check {
-    color: #198754;
-    margin-right: 10px; }
-  .admin .form-select {
-    border: 1px solid #212529; }
-  .admin .form-check-input[type="checkbox"] {
-    border-radius: 0;
-    border: 1px solid #212529;
-    -webkit-box-shadow: none;
-            box-shadow: none; }
-  .admin .btn-outline-gray {
-    border: 1px solid #ced4da;
-    color: #ced4da; }
-  .admin .icon-danger {
-    color: #dc3545;
-    margin-right: 10px; }
-  .admin .modal-img {
-    height: 141px; }
-    .admin .modal-img img {
-      -o-object-fit: cover;
-         object-fit: cover;
-      height: 100%; }
-  .admin .model-title {
-    font-size: 24px;
-    line-height: 36px;
-    margin-bottom: 8px; }
-  .admin .modal-footer {
-    border-top: none; }
-  .admin .bg-gray {
-    background-color: #f8f9fa; }
+
+.admin .modal-header h3 {
+  font-size: 24px;
+  line-height: 33px; }
+
+.admin h4 {
+  font-size: 20px;
+  line-height: 33px; }
+
+.admin label {
+  font-size: 14px; }
+
+.admin .btn-outline-gray {
+  border: 1px solid #ced4da;
+  color: #ced4da; }
+
+.admin .modal-img {
+  height: 141px; }
+  .admin .modal-img img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%; }
+
+.admin .model-title {
+  font-size: 24px;
+  line-height: 36px; }
 
 /*# sourceMappingURL=all.css.map */

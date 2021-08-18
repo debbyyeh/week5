@@ -1,18 +1,11 @@
 .admin {
-    padding: 32px;
-    width: 80%;
-    header {
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
     .page_name {
         @include word(24px, 33px);
     }
     .admin_list {
         tr {
-            border-bottom: 1px solid $border-gray;
             &:hover {
-                background-color: $background-gray;
+                background-color: $bg-gray-100;
                 cursor: pointer;
             }
         }
@@ -20,56 +13,27 @@
     .arrow_downward {
         display: inline-block;
     }
-    .bottom_color {
-        tr {
-            border-bottom: 1px solid $text-black;
-        }
-    }
-    .page-item {
-        a {
-            &:hover {
-                color: white;
-                background-color: $primary;
-            }
+    .page-link {
+        color: black;
+        &:hover {
+            color: white;
+            background-color: $success;
         }
     }
     .modal-header {
-        border-bottom: none;
         h3 {
             @include word(24px, 33px);
         }
     }
-    .modal-input-content {
-        h4 {
-            margin-bottom: 18px;
-            @include word(20px, 33px);
-        }
-        label {
-            font-size: 14px;
-        }
+    h4 {
+        @include word(20px, 33px);
     }
-    .divider {
-        color: $border-gray;
-    }
-    .icon-check {
-        color: $primary;
-        margin-right: 10px;
-    }
-    .form-select {
-        border: 1px solid $text-black;
-    }
-    .form-check-input[type="checkbox"] {
-        border-radius: 0;
-        border: 1px solid $text-black;
-        box-shadow: none;
+    label {
+        font-size: 14px;
     }
     .btn-outline-gray {
-        border: 1px solid $border-gray;
-        color: $border-gray;
-    }
-    .icon-danger {
-        color: #dc3545;
-        margin-right: 10px;
+        border: 1px solid $gray-400;
+        color: $gray-400;
     }
     .modal-img {
         height: 141px;
@@ -80,12 +44,5 @@
     }
     .model-title {
         @include word(24px, 36px);
-        margin-bottom: 8px;
-    }
-    .modal-footer {
-        border-top: none;
-    }
-    .bg-gray {
-        background-color: $background-gray;
     }
 }

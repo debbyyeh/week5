@@ -1,7 +1,6 @@
 .sideBar {
     min-height: 100vh;
     min-width: 296px;
-    background-color: $background-gray;
     .sideBar_list {
         h1 {
             a {
@@ -18,8 +17,8 @@
         a {
             border-left: 4px solid transparent;
             &:hover {
-                color: $primary;
-                border-left: 4px solid $primary;
+                color: $success;
+                border-left: 4px solid $success;
             }
         }
     }

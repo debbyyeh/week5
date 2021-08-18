@@ -4,13 +4,13 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
-<div class="admin">
-    <header class="d-flex justify-content-between align-items-center mb-2">
+<div class="admin w-80 p-5">
+    <header class="d-flex justify-content-between align-items-center pt-5 pb-5 mb-2">
         <div class="title d-flex align-items-center">
             <h2 class="page_name fw-bold me-5">Admin</h2>
             <a href="#" data-bs-toggle="modal" data-bs-target="#newadminModal">
                 <p class="d-flex fw-bold">
-                    <span class="material-icons icon-primary">
+                    <span class="material-icons text-success">
                         add</span>Add New Admin
                 </p>
             </a>
@@ -20,30 +20,30 @@ current: index
             aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="modal-header border-bottom-0">
                         <h3 class="modal-title fw-bold" id="newadminModalLabel">New Admin</h3>
                         <button type="button" class="btn-close pt-3 pb-3" data-bs-dismiss="modal"
                             aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <div class="modal-input-content mb-4 mt-6">
-                            <h4 class="fw-bold">Account</h4>
-                            <div class="form-group bg-transparent">
+                        <div class="mb-4 mt-6">
+                            <h4 class="fw-bold mb-18">Account</h4>
+                            <div class="form-group bg-transparent mb-2">
                                 <label for="name">Name</label>
-                                <input type="text" id="name" class="border-dark p-3 rounded-2"></input>
+                                <input type="text" id="name" class="border-gray-900 p-3 rounded-2"></input>
                             </div>
                             <div class="form-group bg-transparent">
                                 <label for="email">Email
                                 </label>
-                                <input type="email" id="email" class="border-dark p-3 rounded-2"></input>
+                                <input type="email" id="email" class="border-gray-900 p-3 rounded-2"></input>
                             </div>
                         </div>
-                        <hr class="divider">
+                        <hr class="divider bg-gray-400">
                         <div class="modal-input-content mb-4">
-                            <h4 class="fw-bold">Verification</h4>
+                            <h4 class="fw-bold mb-18">Verification</h4>
                             <div class="verify d-flex justify-content-between mb-18">
                                 <div class="d-flex">
-                                    <span class="material-icons icon-danger">
+                                    <span class="material-icons text-danger mr-10">
                                         warning
                                     </span>
                                     <p class="fw-bold">Unverified</p>
@@ -54,9 +54,10 @@ current: index
                                 Mail</button>
                         </div>
                         <hr class="divider">
-                        <div class="modal-input-content mb-4">
-                            <h4 class="fw-bold">-Choose access level-</h4>
-                            <select class="form-select" aria-label="Default select example">
+                        <div class="modal-input-level mb-4">
+                            <h4 class="fw-bold mb-2">Access Level</h4>
+                            <select class="form-select border-gray-900" aria-label="Default select example">
+                                <option value="-Choose access level-">-Choose access level-</option>
                                 <option value="A-level">A</option>
                                 <option value="B-level">B</option>
                                 <option value="C-level">C</option>
@@ -64,33 +65,38 @@ current: index
                         </div>
                         <hr class="divider">
                         <div class="modal-input-content mb-4">
-                            <h4 class="fw-bold">Custom Access</h4>
+                            <h4 class="fw-bold mb-2">Custom Access</h4>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input rounded-0 border-gray-900 border-2 shadow-none"
+                                    type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     Lecture
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <input class="form-check-input rounded-0 border-gray-900 border-2 shadow-none"
+                                    type="checkbox" value="" id="flexCheckChecked">
                                 <label class="form-check-label" for="flexCheckChecked">
                                     Coupon
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <input class="form-check-input rounded-0 border-gray-900 border-2 shadow-none"
+                                    type="checkbox" value="" id="flexCheckChecked">
                                 <label class="form-check-label" for="flexCheckChecked">
                                     Message
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <input class="form-check-input rounded-0 border-gray-900 border-2 shadow-none"
+                                    type="checkbox" value="" id="flexCheckChecked">
                                 <label class="form-check-label" for="flexCheckChecked">
                                     setting
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <input class="form-check-input rounded-0 border-gray-900 border-2 shadow-none"
+                                    type="checkbox" value="" id="flexCheckChecked">
                                 <label class="form-check-label" for="flexCheckChecked">
                                     task menu
                                 </label>
@@ -98,7 +104,7 @@ current: index
                         </div>
                     </div>
 
-                    <div class="modal-footer">
+                    <div class="modal-footer border-top-0">
                         <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Cancel</button>
                         <button type="button" class="btn btn-success">Add</button>
                     </div>
@@ -114,33 +120,15 @@ current: index
                 </span></a>
         </div>
     </header>
-    <p>
-        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-            aria-controls="collapseExample">
-            Link with href
-        </a>
-        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
-            aria-expanded="false" aria-controls="collapseExample">
-            Button with data-bs-target
-        </button>
-    </p>
-    <div class="collapse" id="collapseExample">
-        <div class="card card-body">
-            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the
-            user activates the relevant trigger.
-        </div>
-    </div>
     <!-- table -->
     <div class="admin_list">
         <table class="table">
             <thead class="bottom_color">
-                <tr class="fw-bold">
-                    <th scope="col">ID
-                        <div class="arrow_downward">
-                            <span class="material-icons icon-primary ">
-                                arrow_downward
-                            </span>
-                        </div>
+                <tr class="fw-bold border-bottom border-gray-900">
+                    <th scope="col" class="d-flex">ID
+                        <span class="material-icons text-success">
+                            arrow_downward
+                        </span>
                     </th>
                     <th scope="col">Name</th>
                     <th scope="col">Email</th>
@@ -148,7 +136,7 @@ current: index
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr class="border-bottom border-gray-900">
                     <th scope="row">#1</th>
                     <td>Emir Wicks</td>
                     <td>emir.wicks@mail.com</td>
@@ -160,12 +148,12 @@ current: index
                                 mode_edit
                             </span></a></td>
                 </tr>
-                <tr>
+                <tr class="border-bottom border-gray-900">
                     <th scope="row">#2</th>
                     <td>Zaina Goldsmith</td>
                     <td>zaina.goldsmith@mail.com</td>
                     <td>Yes</td>
-                    <td><span class="material-icons">
+                    <td><span class="material-icons" data-bs-toggle="modal" data-bs-target="#visibilityModal">
                             visibility
                         </span></td>
                     <!-- Button trigger modal -->
@@ -173,12 +161,12 @@ current: index
                                 mode_edit
                             </span></a></td>
                 </tr>
-                <tr>
+                <tr class="border-bottom border-gray-900">
                     <th scope="row">#3</th>
                     <td>Mahima Lopez</td>
                     <td>mahima.lopez@mail.com</td>
                     <td>Yes</td>
-                    <td><span class="material-icons">
+                    <td><span class="material-icons" data-bs-toggle="modal" data-bs-target="#visibilityModal">
                             visibility
                         </span></td>
 
@@ -187,12 +175,12 @@ current: index
                                 mode_edit
                             </span></a></td>
                 </tr>
-                <tr>
+                <tr class="border-bottom border-gray-900">
                     <th scope="row">#4</th>
                     <td>Pharrell Murray</td>
                     <td>pharrell.murray@mail.com</td>
                     <td>Yes</td>
-                    <td><span class="material-icons">
+                    <td><span class="material-icons" data-bs-toggle="modal" data-bs-target="#visibilityModal">
                             visibility
                         </span></td>
                     <!-- Button trigger modal -->
@@ -200,12 +188,12 @@ current: index
                                 mode_edit
                             </span></a></td>
                 </tr>
-                <tr>
+                <tr class="border-bottom border-gray-900">
                     <th scope="row">#5</th>
                     <td>Annika Mcbride</td>
                     <td>annika.mcbride@mail.com</td>
                     <td>Yes</td>
-                    <td><span class="material-icons">
+                    <td><span class="material-icons" data-bs-toggle="modal" data-bs-target="#visibilityModal">
                             visibility
                         </span></td>
                     <!-- Button trigger modal -->
@@ -213,12 +201,12 @@ current: index
                                 mode_edit
                             </span></a></td>
                 </tr>
-                <tr>
+                <tr class="border-bottom border-gray-900">
                     <th scope="row">#6</th>
                     <td>Fatimah Clark</td>
                     <td>fatimah.clark@mail.com</td>
                     <td>Yes</td>
-                    <td><span class="material-icons">
+                    <td><span class="material-icons" data-bs-toggle="modal" data-bs-target="#visibilityModal">
                             visibility
                         </span></td>
                     <!-- Button trigger modal -->
@@ -226,12 +214,12 @@ current: index
                                 mode_edit
                             </span></a></td>
                 </tr>
-                <tr>
+                <tr class="border-bottom border-gray-900">
                     <th scope="row">#7</th>
                     <td>Klaudia Rhodes</td>
                     <td>klaudia.rhodes@mail.com</td>
                     <td>Yes</td>
-                    <td><span class="material-icons">
+                    <td><span class="material-icons" data-bs-toggle="modal" data-bs-target="#visibilityModal">
                             visibility
                         </span></td>
                     <!-- Button trigger modal -->
@@ -239,12 +227,12 @@ current: index
                                 mode_edit
                             </span></a></td>
                 </tr>
-                <tr>
+                <tr class="border-bottom border-gray-900">
                     <th scope="row">#8</th>
                     <td>Tillie Lucero</td>
                     <td>tillie.lucero@mail.com</td>
                     <td>Yes</td>
-                    <td><span class="material-icons">
+                    <td><span class="material-icons" data-bs-toggle="modal" data-bs-target="#visibilityModal">
                             visibility
                         </span></td>
                     <!-- Button trigger modal -->
@@ -252,12 +240,12 @@ current: index
                                 mode_edit
                             </span></a></td>
                 </tr>
-                <tr>
+                <tr class="border-bottom border-gray-900">
                     <th scope="row">#9</th>
                     <td>Sabrina Stephenson</td>
                     <td>sabrina.stephenson@mail.com</td>
                     <td>Yes</td>
-                    <td><span class="material-icons">
+                    <td><span class="material-icons" data-bs-toggle="modal" data-bs-target="#visibilityModal">
                             visibility
                         </span></td>
                     <!-- Button trigger modal -->
@@ -265,14 +253,14 @@ current: index
                                 mode_edit
                             </span></a></td>
                 </tr>
-                <tr>
+                <tr class="border-bottom border-gray-900">
                     <th scope="row">#10</th>
                     <td>Annie Smith</td>
                     <td>annie.smith@mail.com</td>
                     <td>Yes</td>
-                    <td><a href="#"><span class="material-icons">
-                                visibility
-                            </span></a></td>
+                    <td><span class="material-icons" data-bs-toggle="modal" data-bs-target="#visibilityModal">
+                            visibility
+                        </span></a></td>
                     <!-- Button trigger modal -->
                     <td>
                         <a href="#">
@@ -299,8 +287,22 @@ current: index
                                     </div>
                                     <div>
                                         <p>Admin</p>
-                                        <h5 class="model-title fw-bold">Emir Wicks</h5>
-                                        <p>emir.wicks@mail.com</p>
+                                        <h5 class="model-title mb-2 fw-bold">Emir Wicks</h5>
+                                        <p class="mb-3">emir.wicks@mail.com</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="bg-gray pt-1 pb-1 px-2">Verified</p>
+                                        <a data-bs-toggle="Verifiedcollapse" href="#Verifiedcollapse" role="button"
+                                            aria-expanded="false" aria-controls="Verifiedcollapse"><span
+                                                class="material-icons-outlined text-success">
+                                                expand_more
+                                            </span></a>
+                                    </div>
+                                    <div class="collapse" id="Verifiedcollapse">
+                                        <div class="d-flex justify-content-between">
+                                            <button type="button" class="btn btn-outline-danger">Deactive</button>
+                                            <button type="button" class="btn btn-success">Edit</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -318,9 +320,9 @@ current: index
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <div class="modal-input-content mb-4 mt-6">
-                                    <h4 class="fw-bold">Account</h4>
-                                    <div class="form-group account-bg">
+                                <div class="mb-4 mt-6">
+                                    <h4 class="fw-bold mb-2">Account</h4>
+                                    <div class="form-group">
                                         <label for="name">Name</label>
                                         <input type="text" readonly placeholder="Emir Wicks" id="name"
                                             class="p-3 border-0 rounded-2 bg-gray"></input>
@@ -333,11 +335,11 @@ current: index
                                     </div>
                                 </div>
                                 <hr class="divider">
-                                <div class="modal-input-content mb-4">
-                                    <h4 class="fw-bold">Verification</h4>
+                                <div class="mb-4">
+                                    <h4 class="fw-bold mb-2">Verification</h4>
                                     <div class="verify d-flex justify-content-between mb-18">
                                         <div class="d-flex">
-                                            <span class="material-icons icon-check">
+                                            <span class="material-icons icon-check text-success mr-10">
                                                 check_circle
                                             </span>
                                             <p class="fw-bold">Verified</p>
@@ -349,8 +351,8 @@ current: index
                                         Mail</button>
                                 </div>
                                 <hr class="divider">
-                                <div class="modal-input-content mb-4">
-                                    <h4 class="fw-bold">Access Level</h4>
+                                <div class="mb-4">
+                                    <h4 class="fw-bold mb-2">Access Level</h4>
                                     <select class="form-select" aria-label="Default select example">
                                         <option value="A-level">A</option>
                                         <option value="B-level">B</option>
@@ -358,44 +360,49 @@ current: index
                                     </select>
                                 </div>
                                 <hr class="divider">
-                                <div class="modal-input-content mb-4">
-                                    <h4 class="fw-bold">Custom Access</h4>
+                                <div class="mb-4">
+                                    <h4 class="fw-bold mb-2">Custom Access</h4>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <input class="form-check-input rounded-0 border-gray-900 border-2 shadow-none"
+                                            type="checkbox" value="" id="flexCheckDefault">
                                         <label class="form-check-label" for="flexCheckDefault">
                                             Lecture
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <input class="form-check-input rounded-0 border-gray-900 border-2 shadow-none"
+                                            type="checkbox" value="" id="flexCheckChecked">
                                         <label class="form-check-label" for="flexCheckChecked">
                                             Coupon
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <input class="form-check-input rounded-0 border-gray-900 border-2 shadow-none"
+                                            type="checkbox" value="" id="flexCheckChecked">
                                         <label class="form-check-label" for="flexCheckChecked">
                                             Message
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <input class="form-check-input rounded-0 border-gray-900 border-2 shadow-none"
+                                            type="checkbox" value="" id="flexCheckChecked">
                                         <label class="form-check-label" for="flexCheckChecked">
                                             setting
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <input class="form-check-input rounded-0 border-gray-900 border-2 shadow-none"
+                                            type="checkbox" value="" id="flexCheckChecked">
                                         <label class="form-check-label" for="flexCheckChecked">
                                             task menu
                                         </label>
                                     </div>
                                 </div>
                                 <hr class="divider">
-                                <div class="modal-input-content mb-4">
-                                    <h4 class="fw-bold">Deactivate Account</h4>
+                                <div class="mb-4">
+                                    <h4 class="fw-bold mb-2">Deactivate Account</h4>
                                     <div class="deactive d-flex mb-18">
-                                        <span class="material-icons icon-danger">
+                                        <span class="material-icons text-danger">
                                             warning
                                         </span>
                                         <p class="text-danger">This cannot be undone!</p>
@@ -417,20 +424,20 @@ current: index
         </table>
     </div>
     <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-end">
+        <ul class="pagination justify-content-end border-success">
             <li class="page-item">
-                <a class="icon-primary page-link" href="#" aria-label="Previous">
-                    <span class="material-icons">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span class="material-icons fs-6">
                         chevron_left
                     </span>
                 </a>
             </li>
-            <li class="page-item"><a class="page-link text-drak" href="#">1</a></li>
-            <li class="page-item"><a class="page-link text-drak" href="#">2</a></li>
-            <li class="page-item"><a class="page-link text-drak" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
             <li class="page-item">
-                <a class="icon-primary page-link" href="#" aria-label="Next">
-                    <span class="material-icons">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span class="material-icons fs-6">
                         chevron_right
                     </span>
                 </a>

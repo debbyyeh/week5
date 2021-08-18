@@ -1,20 +1,11 @@
 .index {
-    padding: 32px;
-    width: 80%;
-    header {
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
-    .status {
-        width: 40%;
-    }
     .list-group-item {
         &:hover {
-            background-color: $background-gray;
+            background-color: $bg-gray-100;
         }
         &.active {
-            background-color: $background-gray;
-            border-color: $border-gray;
+            background-color: $bg-gray-100;
+            border-color: $gray-400;
         }
     }
     .page_name {
@@ -25,17 +16,8 @@
             }
         }
     }
-    .assignment_list {
-        margin-bottom: 4px;
-    }
-    .arrow {
-        color: $primary;
-    }
-    .assignment_type {
-        font-size: 12px;
-    }
-    .assignment_time {
-        font-size: 12px;
+    .dropdown-toggle::after {
+        display: none;
     }
     .assignment_name {
         font-size: 12px;
@@ -45,8 +27,6 @@
         width: 58%;
     }
     .message_news {
-        font-size: 12px;
-        text-align: right;
         color: $text-gray;
     }
     .card_pic {
@@ -58,28 +38,17 @@
             object-fit: cover;
         }
     }
-    .upper_part {
-        border-bottom: 1px solid $border-gray;
-    }
     .message_time {
-        font-size: 12px;
         color: $text-gray;
     }
     .assignment_content {
         @include word(14px, 21px);
         a {
-            color: $primary;
-            background-color: $background-gray;
             display: inline;
             &:hover {
                 text-decoration: underline;
             }
         }
-    }
-    .document {
-        background-color: $background-gray;
-        display: inline;
-        padding: 10px 16px;
     }
     .star-click {
         &:hover {
